@@ -3,7 +3,7 @@ const permission = require('../permission');
 const jwt = require('jsonwebtoken');
 
 // regstration
-const registerUser = async (req, res) => {
+const registrationUser = async (req, res) => {
     try {
         let { role = 'student', email } = req.body;
         let per;
@@ -59,4 +59,4 @@ const getPrivateData = async (req, res) => {
 };
 
 
-module.exports = {registerUser,loginUser,getPrivateData};
+module.exports = {registrationUser,loginUser,getPrivateData};
