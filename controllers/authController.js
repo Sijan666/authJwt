@@ -36,6 +36,9 @@ const loginUser = async (req, res) => {
         let { email } = req.body;
         const existingUser = await User.findOne({ email: email });
 
+        console.log(existingUser);
+    
+        // jwt.sign({data,secret,expire})
         let token = jwt.sign({
             _id: existingUser.id,
             email: existingUser.email,
