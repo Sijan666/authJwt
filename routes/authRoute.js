@@ -7,6 +7,4 @@ router.post('/registration', registrationUser);
 router.post('/login', loginUser);
 router.get("/privatedata", checkAccess, getPrivateData);
 
-module.exports = router;
-
 module.exports = router
