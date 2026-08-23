@@ -11,7 +11,7 @@ const userSchema = new Schema({
         default:"student"
     },
     permission:{
-        type: [String],
+        type: [String]
     }
 })
 
