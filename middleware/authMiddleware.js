@@ -4,6 +4,7 @@ function checkAccess(req, res, next) {
     try {
         let authHeader = req.headers.authorization;
 
+        // split for remove bearer and space from token
         let token = authHeader.split(' ')[1];
         console.log(token);
 
