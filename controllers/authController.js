@@ -2,7 +2,7 @@ const User = require('../models/userSchema');
 const permission = require('../permission');
 const jwt = require('jsonwebtoken');
 
-// regstratio
+// regstration
 const registrationUser = async (req, res) => {
     try {
         let { role = 'student', email } = req.body;
