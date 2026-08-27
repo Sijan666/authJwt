@@ -30,7 +30,7 @@ const registrationUser = async (req, res) => {
     }
 };
 
-// logi
+// login
 const loginUser = async (req, res) => {
     try {
         let { email } = req.body;
